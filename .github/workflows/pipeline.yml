@@ -30,11 +30,11 @@ jobs:
 
   lint:
     needs: minify
-    uses: ./.github/workflows/lint_and_format.yml
+    uses: ./.github/workflows/lint..yml
   
   lighthouse:
     needs: test
-    uses: ./.github/workflows/lightHouse.yml
+    uses: ./.github/workflows/lighthouse.yml
     with:
       input_artifact: "site-minified"
       output_artifact: "site-ready"
